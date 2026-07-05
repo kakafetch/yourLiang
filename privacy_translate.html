@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>隐私政策 - TK图片翻译</title>
+  <style>
+    body {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: #1e293b;
+      line-height: 1.8;
+      font-size: 15px;
+    }
+    h1 { font-size: 24px; border-bottom: 2px solid #3b82f6; padding-bottom: 12px; }
+    h2 { font-size: 18px; margin-top: 32px; color: #1e40af; }
+    strong { color: #0f172a; }
+    table { border-collapse: collapse; width: 100%; margin: 12px 0; }
+    th { background: #f1f5f9; padding: 8px 12px; text-align: left; border: 1px solid #e2e8f0; }
+    td { padding: 8px 12px; border: 1px solid #e2e8f0; }
+    code { background: #f1f5f9; padding: 2px 6px; border-radius: 4px; font-size: 13px; }
+    .footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #e2e8f0; color: #94a3b8; font-size: 13px; }
+  </style>
+</head>
+<body>
+
+<h1>🔒 隐私政策 — TK图片翻译</h1>
+
+<p><strong>最后更新日期：</strong>2026年7月5日</p>
+
+<p>TK图片翻译（以下简称"本扩展"）是一款TikTok Shop商品图片翻译工具，在卖家后台提供一键图片翻译功能。本扩展尊重并保护用户隐私。</p>
+
+<h2>1. 我们收集哪些信息</h2>
+<ul>
+  <li><strong>账号信息：</strong>当您登录时，我们会存储您的登录令牌（Token），用于调用后端翻译API。Token仅保存在您的浏览器本地存储中。</li>
+  <li><strong>图片数据：</strong>您选择翻译的商品图片会被上传至翻译服务器进行处理。翻译完成后，图片会通过TikTok官方接口上传至您的店铺。</li>
+  <li><strong>语言偏好设置：</strong>您选择的源语言和目标语言保存在本地浏览器中，用于提升使用体验。</li>
+</ul>
+
+<h2>2. 我们如何收集信息</h2>
+<ul>
+  <li><strong>浏览器存储：</strong>使用 Chrome Storage API 在本地存储登录Token和语言偏好。</li>
+  <li><strong>网络请求：</strong>通过 HTTPS 协议与后端翻译API通信，传输图片数据进行翻译。</li>
+  <li><strong>网页内容访问：</strong>仅在 TikTok Shop 卖家后台读取商品信息和图片，仅用于翻译功能。</li>
+</ul>
+
+<h2>3. 信息使用目的</h2>
+<p>我们收集的信息<strong>仅用于</strong>以下目的：</p>
+<ul>
+  <li>提供 AI 图片翻译服务</li>
+  <li>将翻译后的图片上传至您的 TikTok Shop 店铺</li>
+  <li>验证用户身份，确保服务安全</li>
+</ul>
+
+<h2>4. 权限说明</h2>
+<p>本扩展申请以下浏览器权限，均<strong>仅为</strong>实现翻译功能：</p>
+
+<table>
+  <tr><th>权限</th><th>用途</th></tr>
+  <tr><td><code>storage</code></td><td>本地保存登录Token和语言设置</td></tr>
+  <tr><td><code>tabs</code></td><td>与当前页面通信，实现翻译功能</td></tr>
+  <tr><td><code>webRequest</code></td><td>拦截API请求，获取TikTok签名参数</td></tr>
+  <tr><td><code>scripting</code></td><td>在目标页面注入翻译辅助脚本</td></tr>
+  <tr><td><code>cookies</code></td><td>读取TikTok登录Cookie，确保API调用合法</td></tr>
+</table>
+
+<p>本扩展仅在 TikTok Shop 卖家后台运行（*.tiktokshopglobalselling.com、*.tiktok.com、*.tokopedia.com）。</p>
+
+<h2>5. 数据存储与安全</h2>
+<ul>
+  <li>所有数据传输均使用<strong>HTTPS 加密</strong>。</li>
+  <li>登录Token存储在<strong>浏览器本地</strong>，不会上传至除翻译API服务器以外的任何地方。</li>
+  <li>翻译后的图片<strong>直接上传至您的 TikTok Shop 店铺</strong>，服务器不会长期存储您的商品图片。</li>
+  <li>我们<strong>不会</strong>将您的数据出售或分享给任何第三方。</li>
+</ul>
+
+<h2>6. 第三方服务</h2>
+<p>本扩展使用以下第三方服务：</p>
+<ul>
+  <li><strong>TikTok Shop API：</strong>获取商品信息、上传翻译后的图片。数据受 TikTok 隐私政策保护。</li>
+  <li><strong>翻译后端 API：</strong>执行 AI 图片翻译。</li>
+  <li><strong>Gemini API（可选）：</strong>当用户启用 Gemini 翻译引擎时使用。</li>
+</ul>
+
+<h2>7. 您的权利</h2>
+<ul>
+  <li>您可以随时<strong>卸载本扩展</strong>，所有本地存储的数据将被清除。</li>
+  <li>您可以在浏览器设置中<strong>管理扩展权限</strong>，限制扩展在特定网站运行。</li>
+  <li>如需删除账户数据，请联系我们。</li>
+</ul>
+
+<h2>8. 联系我们</h2>
+<p>如对本隐私政策有任何疑问，请联系：</p>
+<ul>
+  <li>📧 微信：<strong>xtsm2024</strong></li>
+</ul>
+
+<div class="footer">
+  <p>© 2026 TK图片翻译。保留所有权利。</p>
+</div>
+
+</body>
+</html>
